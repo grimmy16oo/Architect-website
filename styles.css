@@ -47,7 +47,7 @@
     text-decoration: none;
     font-size: 18px;
 }
-.nav-bar, .banner,.some-facts,.feature,.sponsor-section{
+.nav-bar, .banner,.some-facts,.feature,.sponsor-section,.Enjoy-feature,.footer{
     max-width: 1440px;
     margin: 0 auto;
 }
@@ -91,6 +91,41 @@
     font-size: 1rem;
     font-weight: 500;
 }
+
+
+/* enjoy feature */
+.Enjoy-feature{
+    margin-top: 130px;
+    gap: 140px;
+    align-items: center;
+}
+.enjoy-title{
+    font-size: 2.8rem;
+    border-left: 5px solid #FF900E; 
+    padding: 20px;
+}
+.enjoy-card{
+    border-radius: 8px;
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.25);
+    padding: 30px;
+    margin-bottom: 20px;
+}
+.card-heading{
+    font-size: 1.2rem;
+}
+.experience-btn{
+    margin-left: -100px;
+    margin-top: -100px;
+}
+#first-part{
+    font-size: 4rem;
+    font-weight: 600;
+}
+#second-part{
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
 
 /* fact-section */
 .some-facts{
@@ -144,16 +179,20 @@
     filter: grayscale(100);
 }
 
+/* footer-section */
+.footer{
+    margin-top: 130px;
+    margin-bottom: 200px;
+    background-color: #FFF4E7;
+    padding: 30px 0;
+    font-size: 1.1rem;
+    text-align: center;
+}
 
 
 
 
-
-
-
-
-
-/* responsive */
+/* responsive mobile */
 @media screen and (max-width: 576px) {
     .nav-bar,.nav-links,.feature{
         flex-direction: column;
@@ -165,6 +204,15 @@
     .feature-content{
         margin-left: 20px;
     }
+    .Enjoy-feature{
+        flex-direction: column;
+    }
+    .enjoy-image img{
+        width: 100%;
+    }
+    .experience-btn{
+        margin: 0px;
+    }
     .fact-container{
         grid-template-columns: repeat(1,1fr);
         justify-items: center;
@@ -176,23 +224,41 @@
         gap: 24px;
     }
 }
+/* responsive tablet */
  @media screen and (min-width: 576px) and (max-width: 992px) {
     .feature {
         flex-direction: column;
     }
-
     .feature-content {
-        margin: 50px auto;
+        margin: 100px 0 auto;
     }
+
     .fact-container{
         grid-template-columns: repeat(2,1fr);
         justify-items: center;
         gap: 24px;
+        width: 100%;
     }
+
+    .Enjoy-feature {
+        margin-top: 0;
+        flex-direction: column;
+        gap: 24px;
+    }
+    .enjoy-image img {
+        width: 100%;
+    }
+    .experience-btn {
+        margin: 0;
+    }
+
+    .some-facts {
+        justify-items: center;
+    }
+
     .sponsor-image{
         grid-template-columns: repeat(2,1fr);
         justify-items: center;
         gap: 24px;
     }
 }
-
