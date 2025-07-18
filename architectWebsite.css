@@ -1,0 +1,148 @@
+.work-sans-font {
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+/* shared style */
+.flex{
+    display: flex;
+}
+.dark02{
+    color: #424242;
+}
+.dark03{
+    color: #727272;
+}
+.bgcolor{
+    background-color: rgba(255, 144, 14, 0.1);
+}
+.primary-btn{
+    background-color: #FF900E;
+    color: white;
+    padding: 20px 24px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 50px;
+}
+.section-gap{
+    margin-top: 130px;
+}
+
+/* nav section */
+.nav-bar{
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-bar h1{
+    font-size: 3rem;
+    font-weight: 700;
+}
+.nav-links{
+    list-style: none;
+    gap: 2em;
+}
+.nav-bar a{
+    text-decoration: none;
+    font-size: 18px;
+}
+.nav-bar, .banner,.some-facts,.feature{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+/* banner section */
+.banner-content{
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+}
+.banner h1{
+    font-size: 4rem;
+}
+.banner img{
+    width: 100%;
+}
+
+/* feature section */
+.feature{
+    align-items: center;
+}
+.feature-img{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 24px;
+}
+.feature-content{
+    max-width: 530px;
+    margin-left: 100px ;
+}
+.feature-heading{
+    font-size: 2.8rem;
+}
+#part1{
+    font-weight: 500;
+}
+#part3{
+    color: #FF900E;
+}
+.feature-para{
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+/* fact-section */
+.some-facts{
+    margin-top: 130px;  
+}
+.facts-heading{
+    font-size: 2.5rem;
+}
+.facts-description{
+    max-width: 550px;
+    font-size: 1rem;
+}
+.fact-container{
+    justify-content: space-between;
+}
+.fact{
+    width: 200px;
+    height: 200px;
+    padding: 20px 0;
+    text-align: center;
+    border: 1px solid #FF900E;
+    border-radius: 8px;
+}
+.fact-num{
+    font-size: 2.5rem;
+}
+.fact-name{
+    font-size: 1rem;
+    font-weight: 400px;
+}
+
+
+/* responsive */
+@media screen and (max-width: 576px) {
+    .nav-bar,.nav-links,.feature{
+        flex-direction: column;
+    } 
+    .feature-img{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }  
+    .feature-content{
+        margin-left: 20px;
+    }
+}
+ @media screen and (min-width: 576px) and (max-width: 992px) {
+    .feature {
+        flex-direction: column;
+    }
+
+    .feature-content {
+        margin: 50px auto;
+    }
+}
+
